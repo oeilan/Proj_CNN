@@ -5,7 +5,7 @@ Data source : https://console.cloud.google.com/storage/browser/quickdraw_dataset
 
 This project uses Keras to implement a CNN model and comprises of the following parts :
 
-(1) A CNN model which classifies images downloaded from the Quick Draw dataset. Quickdraw images used are in the 28 x 28 numpy bitmap format. Program reads all quick draw .npy files from './data_quickdraw_npy/' sub-directory. Model has been trained on a downloaded quick draw sub-dataset of 40 classes with 2000 images per class. Program can accept varying number of classes (determined by the number of downloaded .npy files) and images per class can be changed by resetting global variable n_images_per_class. The trained keras model has been saved in the sub-directory './model/'.
+(1) A CNN model which classifies images downloaded from the Quick Draw dataset. Quickdraw images used are in the 28 x 28 numpy bitmap format. Program reads all quick draw .npy files from './data_quickdraw_npy/' sub-directory, which must be downloaded from link above. Model has been trained on a downloaded quick draw sub-dataset of 40 classes with 2000 images per class. Program can accept varying number of classes (determined by the number of downloaded .npy files) and images per class can be changed by resetting global variable n_images_per_class.
 
 (2) The model is used to predict class of objects in selected images of drawings from outside the quickdraw data set.
 
